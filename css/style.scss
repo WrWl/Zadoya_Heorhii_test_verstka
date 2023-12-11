@@ -1,0 +1,552 @@
+$tableMainText: #292D32;
+$pagesText: #9197B3;
+$lines:#EEEEEE;
+$tableTitleText:#B5B7C0;
+$white:#FFFFFF;
+$black:#000000;
+$btnNumber:#404B52;
+$btnBorder:#F5F5F5;
+$btnActiveBg:#5932EA;
+$inactiveText:#DF0404;
+$inactiveBg:#FFC5C5;
+$activeText:#008767;
+$activeborder:#00B087;
+$activeBg:#a6e7d8;
+$searchIcon:#7E7E7E;
+$searchBg:#F9FBFF;
+$headDescription:#16C098;
+$version:#838383;
+$accountPosition:#757575;
+$mainBg:#FAFBFF;
+body{
+    background-color: $mainBg;
+}
+.wrapper{
+    display:flex;
+    flex-direction: row;
+    
+}
+.sidebar {
+    background-color: $white;
+    box-shadow: 0px 10px 60px rgba(225.83, 236.19, 248.63, 0.50);
+    display: flex;
+    flex-direction: column;
+    padding-left: 28px;
+    
+}
+.sidebar .account{
+    margin-top: auto;
+    margin-bottom: 76px;
+}
+
+.logo a {
+    display: flex;
+    flex-direction: row;
+    padding-top: 36px;
+    padding-bottom: 65px;
+    
+}
+
+.logo__link {
+    
+}
+
+.logo__img {
+    width: 37px;
+    height: 37px;
+    
+}
+
+.logo__text {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    
+}
+
+.logo__title {
+    font-size: 26px;
+    color:$black;
+    cursor: pointer;
+}
+
+.logo__ver {
+    font-size: 10px;
+    color: $version;
+}
+
+.nav {
+    margin-left:11px;
+    margin-right:28px;
+}
+
+.nav__list {}
+
+.nav__el a {
+    width: 250px;
+    padding:11px 8px 11px 11px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px;
+}
+
+.nav__el:hover a {
+    background-color: $btnActiveBg;
+    color: $white;
+}
+.activeNav{
+    background-color: $btnActiveBg;
+        border: none;
+        color: $white;
+}
+.nav__link:hover img {
+   
+    filter: brightness(0) saturate(100%) invert(100%) sepia(98%) saturate(0%) hue-rotate(11deg) brightness(102%) contrast(106%);
+}
+
+.nav__icon  {
+    filter: brightness(0) saturate(100%) invert(70%) sepia(14%) saturate(513%) hue-rotate(192deg) brightness(85%) contrast(86%);
+    margin-right: 14px;
+}
+
+.nav__text {}
+
+.nav__arrow {
+margin-left: auto;
+}
+
+.account {
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.account__img {
+    width:42px;
+    height:42px;
+    border-radius: 50px;
+    margin-right: 12px;
+}
+
+.account__text{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.account__name {
+    font-weight: 500;
+    letter-spacing: 0.14px;
+    word-wrap: break-word
+}
+
+.account__position {
+    color: $accountPosition;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.12px;
+    word-wrap: break-word
+}
+
+.welcome {
+    background-color: $mainBg;
+    padding: 41px 0 51px 0;
+}
+
+.welcome__text {
+    font-size: 24px;
+        font-weight: 500;
+        word-wrap: break-word;
+}
+
+.welcome__name {
+    font-size: 24px;
+        font-weight: 500;
+        word-wrap: break-word;
+}
+
+.content {
+    background-color: $white;
+    margin-left: 71px;
+    
+}
+
+.header {
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    padding:30px 44px 40px 38px;
+}
+
+.header__text {
+        
+}
+
+.header__title {
+   font-size: 22px;
+        font-weight: 600;
+        word-wrap: break-word
+}
+
+.header__description { color: $headDescription;
+        font-size: 14px;
+        font-weight: 400;
+        word-wrap: break-word}
+
+.search {
+    display: flex;
+        align-items: center;
+        position: relative;
+        
+}
+
+.search__icon {
+    position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 24px;
+        width: 24px;
+}
+
+.search__field {
+    border:  0px solid;
+    border-radius: 10px;
+    background: $searchBg;
+    padding: 10px 10px 10px 39px; 
+    width: 216px;
+    cursor: pointer;
+}
+.customers {
+    
+}
+.container{
+    height: fit-content;
+    box-shadow: 0px 10px 60px rgba(225.83, 236.19, 248.63, 0.50);
+        border-radius: 30px
+}
+.table {
+    padding: 0px 44px 0px 38px;
+    
+}
+
+.title {}
+
+.title__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px $lines solid;
+}
+.title__list:last-child{
+    margin-right: 23px;
+}
+.title__el {}
+
+.title__item {
+    color:$tableTitleText;
+        font-size: 14px;
+        font-weight: 500;
+        word-wrap: break-word;
+}
+
+.row {}
+
+.row__list {
+    display:flex;
+flex-direction: row;
+justify-content: space-between;
+border-bottom: 1px $lines solid;
+margin-top: 20px;
+margin-bottom: 20px;
+align-items: center;
+}
+
+.row__el {
+    max-width:170px;
+    height: fit-content;
+    
+}
+
+.row__item {
+    
+}
+.status-active{
+padding:4px 18px ;
+background-color: $activeBg;
+color:$activeText;
+border:1px $activeborder solid;
+border-radius: 4px;
+}  
+.status-inactive{
+padding: 4px 12px;
+    background-color: $inactiveBg;
+    color: $inactiveText;
+        border: 1px $inactiveText solid;
+        border-radius: 4px;
+}
+.pages {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 40px 40px 38px;
+}
+
+.pages__text {}
+
+.pages__description {
+    padding-left: 8px;
+    color: $tableTitleText;
+}
+
+.pages__list {
+    display: flex;
+        flex-direction: row;
+        padding-right: 8px;
+}
+
+.pages__el {}
+
+.previousPage{
+    margin-right: 6px;
+}
+.pageNumber{
+    margin:0 6px;
+}
+.pages__el:hover button{
+background-color: $btnActiveBg;
+    border: none;
+    color: $white;
+}
+.nextPage{
+    margin-left: 6px;
+}
+.threeDotsPage{
+    margin: 0 6px;
+}
+.pages__button {
+    background-color: $lines;
+    border:1px $btnBorder solid ;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+        line-height: 12px;
+        word-wrap: break-word;
+    padding:6px 9px 6px 9px;
+}
+.activePage{
+    background-color: $btnActiveBg;
+    border: none;
+    color:$white;
+}
+.threeDotsPage{
+    background-color: transparent;
+    border: none;
+}
+.pages__el:hover .threeDotsPage{
+    background-color: transparent;
+    border: none;
+    color: $black;
+    cursor:auto;
+}
+@media screen and (max-width: 320px) {
+    body{
+        font-size: 12px;
+    }
+    .sidebar{
+        visibility: hidden;
+        display: none;
+    }
+    .burger{
+        visibility: visible;
+        display:flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .burger__line{
+        width:30px;
+        height:4px;
+        background-color: $btnActiveBg;
+        margin-top: 3px;
+    }
+    .content{
+        margin-left: 7px;
+    }
+    
+            
+    .welcome {
+    visibility: hidden;
+        display: none;
+    }
+
+
+
+    .header {
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        padding:15px 10px;
+    }
+    .header__text{
+        
+    }
+    .header__title {
+    font-size: 14px;
+            font-weight: 600;
+            word-wrap: break-word
+    }
+
+    .header__description { 
+        color: $headDescription;
+            font-size: 12px;
+            font-weight: 400;
+            word-wrap: break-word}
+
+    .search {
+        display: flex;
+            align-items: center;
+            position: relative;
+            width: 50%;
+    }
+
+    .search__icon {
+        position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            height: 12px;
+            width: 12px;
+    }
+
+    .search__field {
+        
+        border:  0px solid;
+        border-radius: 10px;
+        background: $searchBg;
+        padding: 10px 10px 10px 27px; 
+
+        cursor: pointer;
+    }
+   
+    .container{
+        height: fit-content;
+        box-shadow: 0px 10px 60px rgba(225.83, 236.19, 248.63, 0.50);
+            border-radius: 30px;
+            padding: 0;
+    }
+    .table {
+        padding: 0px;
+    }
+    .title__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 1px $lines solid;
+    }
+    .title__list:last-child{
+        margin-right: 23px;
+    }
+
+    .title__item {
+        color:$tableTitleText;
+            font-size: 8px;
+            font-weight: 500;
+            word-wrap: break-word;
+    }
+
+    
+
+    .row__list {
+        display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px $lines solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    }
+
+    .row__el {
+        height: fit-content;
+    }
+
+    .row__item {
+       font-size: 8px; 
+    }
+    .status-active{
+    padding:4px 9px ;
+    background-color: $activeBg;
+    color:$activeText;
+    border:1px $activeborder solid;
+    border-radius: 4px;
+    }  
+    .status-inactive{
+    padding: 4px 6px;
+        background-color: $inactiveBg;
+        color: $inactiveText;
+            border: 1px $inactiveText solid;
+            border-radius: 4px;
+    }
+    .pages {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px 10px;
+    }
+
+    .pages__text {}
+
+    .pages__description {
+        padding-left: 8px;
+        color: $tableTitleText;
+        font-size: 8px;
+    }
+
+    .pages__list {
+        display: flex;
+            flex-direction: row;
+            padding-right: 8px;
+    }
+    .previousPage{
+        margin-right: 3px;
+    }
+    .pageNumber{
+        margin:0 3px;
+    }
+    .pages__el:hover button{
+    background-color: $btnActiveBg;
+        border: none;
+        color: $white;
+    }
+    .nextPage{
+        margin-left: 3px;
+    }
+    .threeDotsPage{
+        margin: 0 3px;
+    }
+    .pages__button {
+        background-color: $lines;
+        border:1px $btnBorder solid ;
+        border-radius: 4px;
+        font-size: 8px;
+        font-weight: 500;
+            line-height: 8px;
+            word-wrap: break-word;
+        padding:3px 5px;
+    }
+    .activePage{
+        background-color: $btnActiveBg;
+        border: none;
+        color:$white;
+    }
+    .threeDotsPage{
+        background-color: transparent;
+        border: none;
+    }
+    .pages__el:hover .threeDotsPage{
+        background-color: transparent;
+        border: none;
+        color: $black;
+        cursor:auto;
+    }
+}
